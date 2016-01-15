@@ -1,0 +1,24 @@
+print("welcome to PyAdventure")
+start=input("you wake up in a room with two pathways, what one do you take?")
+if "right" in start:
+    print("you follow the right path")
+    print("in the room to the right you find a pile of gold! do you take it?")
+    second = input()
+    if "yes" in second:
+        third = input("under all the gold you find a hole, do you go into it?")
+        if "yes" in third:
+            print("In the hole is a path out, you win!")
+            if "no" in third:
+                print("you stay in the room for ever and rot away.")
+                if "no" in second:
+                    print("you stay in the room forever and rot")
+if "left" in start:
+    print("you walk into a room with a big dragon!")
+    print("you find a sword, what do you do?")
+    fourth = input()
+    if "grab" in fourth:
+        print("you grab the sword and slay the dragon, you win!")
+        if "run" in fourth:
+            print("as you try to run the dragon breaths fire at you and you burn to a crisp")
+else:
+    print("Im sorry, i dont know what you said")
